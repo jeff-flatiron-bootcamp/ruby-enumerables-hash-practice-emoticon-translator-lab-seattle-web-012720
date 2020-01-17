@@ -19,12 +19,6 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
-  hash = load_library(file_path)
-  #if(hash[:get_emoticon][emoticon] == nil)
-  #  return "Sorry, that emoticon was not found"
-  #else
-  #  hash[:get_emoticon][emoticon]
-  #end
   val = load_library(file_path)[:get_emoticon][emoticon]
   if(val== nil)
     val = "Sorry, that emoticon was not found"
