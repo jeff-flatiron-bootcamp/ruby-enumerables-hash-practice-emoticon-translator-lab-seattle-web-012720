@@ -23,11 +23,7 @@ def load_library(file_path)
   end
   puts "Outputting hash after reduce"
   pp hash
-  us_meaning_hash = hash.reduce({}) do |memo, (key,value)| 
-      memo[value[0]] = key
-      memo
-  end
-  pp meaning_hash
+  pp jap_meaning_hash
   translated_hash = {:get_meaning => jap_meaning_hash, :get_emoticon => us_meaning_hash}
   translated_hash
 end
