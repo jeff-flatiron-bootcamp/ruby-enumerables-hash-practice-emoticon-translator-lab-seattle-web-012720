@@ -27,8 +27,7 @@ def load_library(file_path)
       memo[value[0]] = key
       memo
   end
-  pp meaning_hash
-  translated_hash = {:get_meaning => jap_meaning_hash, :get_emoticon => {}}}
+  translated_hash = {:get_meaning => jap_meaning_hash, :get_emoticon => {}}
   translated_hash
 end
 
