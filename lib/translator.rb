@@ -21,8 +21,7 @@ def load_library(file_path)
       memo[value[1]] = key
       memo
   end
-  puts "Outputting hash after reduce"
-  pp hash
+
   pp jap_meaning_hash
   translated_hash = {:get_meaning => jap_meaning_hash, :get_emoticon => us_meaning_hash}
   translated_hash
